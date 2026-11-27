@@ -1,19 +1,20 @@
+print("Parking System")
 
-print("Vehicle Parking")
+vehicle_no = input("Enter Vehicle Number: ")
+type = input("Enter Vehicle Type (Two/Four/Heavy): ")
+hours = int(input("Enter Hours: "))
 
-type = input("Enter vehicle type (two/four/heavy): ")
-hours = int(input("Enter hours: "))
-
-if type == "two":
+if type == "Two":
     fee = hours * 20
-elif type == "four":
+elif type == "Four":
     fee = hours * 50
-elif type == "heavy":
+elif type == "Heavy":
     fee = hours * 100
 else:
-    print("Invalid vehicle type")
+    print("Invalid Vehicle Type")
     exit()
 
-print("Vehicle type:", type)
+print("Vehicle Number:", vehicle_no)
+print("Vehicle Type:", type)
 print("Hours:", hours)
-print("Parking fee: Rs.", fee)
+print("Parking Fee: Rs.", fee)
